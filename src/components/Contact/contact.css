@@ -24,6 +24,7 @@
 .clientImgs {
   margin: 1rem 0;
   display: flex;
+  flex-wrap: wrap;
 }
 .clientImg {
   object-fit: cover;
@@ -60,4 +61,33 @@
   padding: 0.75rem 3.5rem;
   border: none;
   border-radius: 0.5rem;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.link {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+}
+@media screen and (max-width: 1140px) {
+  .clientDesc {
+    font-size: 2vw;
+    max-width: 85%;
+    margin: 0 auto;
+    /* padding: 0 1.5rem; */
+  }
+  .contactPageTitle {
+    font-size: 5vw;
+  }
+  .clientImg {
+    width: 40%;
+    margin: 1rem;
+  }
+  .clientImgs {
+    display: flex;
+    justify-content: center;
+  }
 }
